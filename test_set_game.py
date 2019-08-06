@@ -1,8 +1,6 @@
 import unittest
 import set_game
 
-
-
 class GetCardTest(unittest.TestCase):
 
     def setUp(self):
@@ -62,46 +60,6 @@ class CheckSetTest(unittest.TestCase):
     def test_check_set_return_false_3(self):
         'Возврат False при комбинации noset'
         self.assertEqual(set_game.check_set(set_game.get_three_cards_from_index(set_game.no_set_3)), False)
-
-
-
-
-
-
-    # def test_raise_error_2(self):
-    #     'Возврат ошибки при неверных аргументах'
-    #     with self.assertRaises(ValueError):
-    #         set_game.random_card(col='ORANGE')
-    #
-    # def test_raise_error_3(self):
-    #     'Возврат ошибки при неверных аргументах'
-    #     with self.assertRaises(ValueError):
-    #         set_game.random_card(1, 'ROUND')
-    #
-    # def test_check_set_return_true_1(self):
-    #     'Сет есть'
-    #     return self.assertEqual(set_game.check_set(set_game.random_card(num=1, sym='DIAMOND', shad='SOLID', col='RED')), True)
-    #
-    # def test_check_set_return_true_2(self):
-    #     'Сет есть'
-    #     return self.assertEqual(set_game.check_set(), True)
-    #
-    # def test_check_set_return_true_3(self):
-    #     'Сет есть'
-    #     return self.assertEqual(set_game.check_set(), True)
-    #
-    # def test_check_set_return_false_1(self):
-    #     'Сета нет'
-    #     return self.assertEqual(set_game.check_set(), False)
-    #
-    # def test_check_set_return_false_2(self):
-    #     'Сета нет'
-    #     return self.assertEqual(set_game.check_set(), False)
-    #
-    # def test_check_set_return_false_3(self):
-    #     'Сета нет'
-    #     return self.assertEqual(set_game.check_set(), False)
-
 
 if __name__ == '__main__':
     unittest.main()
