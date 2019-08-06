@@ -44,7 +44,7 @@ class Card:
             shading not in SHADINGS,
             color not in COLORS
         ]):
-            raise ValueError("xxxxxxxx")
+            raise ValueError("Неправильные параметры карты")
 
         self.number = number
         self.symbol = symbol
@@ -63,9 +63,6 @@ def get_three_cards_random(args1, args2, args3):
     cards =  [get_random_card(*args1), get_random_card(*args2), get_random_card(*args3)]
     return cards
 
-# def get_card_with_index_args(num_ind=randint(0, 2), sym_ind=randint(0, 2), shad_ind=randint(0, 2), col_ind=randint(0, 2)):
-#     return Card(NUMBERS[num_ind], SYMBOLS[sym_ind], SHADINGS[shad_ind], COLORS[col_ind])
-
 def get_card_with_index_args(args):
     return Card(NUMBERS[args[0]], SYMBOLS[args[1]], SHADINGS[args[2]], COLORS[args[3]])
 
@@ -77,13 +74,3 @@ def check_set(cards):
         return False
     x, y, z = [[i.number, i.symbol, i.color, i.shading] for i in cards]
     return all([len(set((x[i], y[i], z[i])))!=2 for i in range(4)])
-
-
-
-get_three_cards_from_index(set_3)
-
-
-
-# card1 = Card(2, 'OVAL', 'SOLID', 'PURPLE')
-# card2 = Card(2, 'DIAMOND', 'OPEN', 'PURPLE')
-# card3 = Card(1, 'SQUIGGLE', 'STIPPED', 'PURPLE')
