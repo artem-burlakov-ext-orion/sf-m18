@@ -52,7 +52,7 @@ class Card:
         self.color = color
 
     def __str__(self):
-        return str(self.number) + ' ' + str(self.symbol) + ' ' + str(self.shading) + ' ' + str(self.color)
+        return f'{self.number}, {self.symbol}, {self.shading}, {self.color}'
 
 def get_three_cards_from_index(args):
     cards = [get_card_with_index_args(args[0]), get_card_with_index_args(args[1]), get_card_with_index_args(args[2])]
