@@ -59,7 +59,7 @@ def get_three_cards_from_index(args):
     return cards
 
 def get_three_cards_random(args1, args2, args3):
-    cards =  [get_random_card(*args1), get_random_card(*args2), get_random_card(*args3)]
+    cards = [get_random_card(*args1), get_random_card(*args2), get_random_card(*args3)]
     return cards
 
 def get_card_with_index_args(args):
