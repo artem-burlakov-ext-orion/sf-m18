@@ -55,7 +55,6 @@ class Card:
         return str(self.number) + ' ' + str(self.symbol) + ' ' + str(self.shading) + ' ' + str(self.color)
 
 def get_three_cards_from_index(args):
-    print(args)
     cards = [get_card_with_index_args(args[0]), get_card_with_index_args(args[1]), get_card_with_index_args(args[2])]
     return cards
 
